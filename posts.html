@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · t3b07-mg-coin-sale-1</title>
+  <meta name="description" content="t3b07-mg-coin-sale-1에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://magok-room-choice.node-link.shop/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+ background: #faf6f0;
+ color: #2c2a28;
+ line-height: 1.6;
+ min-height: 100vh;
+ }
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 0 20px;
+ }
+ header {
+ background: #fff;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .header-inner {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 14px 20px;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+ .logo {
+ font-size: 1.5rem;
+ font-weight: 700;
+ color: #d35400;
+ text-decoration: none;
+ }
+ .logo span {
+ color: #2c2a28;
+ }
+ nav {
+ display: flex;
+ gap: 28px;
+ align-items: center;
+ }
+ nav a {
+ text-decoration: none;
+ color: #2c2a28;
+ font-weight: 500;
+ font-size: 0.95rem;
+ transition: color 0.2s;
+ }
+ nav a:hover {
+ color: #d35400;
+ }
+ .nav-cta {
+ background: #d35400;
+ color: #fff;
+ padding: 8px 20px;
+ border-radius: 30px;
+ font-weight: 600;
+ font-size: 0.9rem;
+ text-decoration: none;
+ transition: background 0.2s;
+ }
+ .nav-cta:hover {
+ background: #b84600;
+ color: #fff;
+ }
+ .hamburger {
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ cursor: pointer;
+ background: none;
+ border: none;
+ padding: 5px;
+ }
+ .hamburger span {
+ width: 24px;
+ height: 2px;
+ background: #2c2a28;
+ border-radius: 2px;
+ display: block;
+ }
+ .mobile-menu {
+ display: none;
+ background: #fff;
+ padding: 20px;
+ border-top: 1px solid #eee;
+ }
+ .mobile-menu a {
+ display: block;
+ padding: 12px 0;
+ text-decoration: none;
+ color: #2c2a28;
+ font-weight: 500;
+ border-bottom: 1px solid #f0ede8;
+ }
+ .mobile-menu a:last-child {
+ border-bottom: none;
+ }
+
+ @media (max-width: 768px) {
+ nav {
+ display: none;
+ }
+ .hamburger {
+ display: flex;
+ }
+ .mobile-menu.active {
+ display: block;
+ }
+ }
+
+ .section {
+ padding: 60px 0;
+ }
+ .section-title {
+ font-size: 2rem;
+ font-weight: 700;
+ margin-bottom: 12px;
+ color: #d35400;
+ }
+ .section-sub {
+ font-size: 1.1rem;
+ color: #6b645c;
+ margin-bottom: 40px;
+ }
+ .info-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 30px;
+ }
+ .info-card {
+ background: #fff;
+ border-radius: 16px;
+ padding: 28px 24px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+ }
+ .info-card h3 {
+ font-size: 1.2rem;
+ font-weight: 600;
+ margin-bottom: 16px;
+ color: #d35400;
+ }
+ .info-card p {
+ margin-bottom: 10px;
+ font-size: 0.95rem;
+ color: #4a4642;
+ }
+ .info-card .highlight {
+ color: #d35400;
+ font-weight: 600;
+ }
+ .info-card .icon-row {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ margin-bottom: 8px;
+ }
+ .badge {
+ display: inline-block;
+ background: #fef0e6;
+ color: #d35400;
+ padding: 4px 12px;
+ border-radius: 20px;
+ font-size: 0.85rem;
+ font-weight: 500;
+ }
+ .faq-item {
+ background: #fff;
+ border-radius: 12px;
+ padding: 20px 24px;
+ margin-bottom: 12px;
+ box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+ }
+ .faq-item h4 {
+ font-size: 1.05rem;
+ font-weight: 600;
+ margin-bottom: 6px;
+ color: #2c2a28;
+ }
+ .faq-item p {
+ font-size: 0.95rem;
+ color: #5a5652;
+ }
+ .tel-link {
+ display: inline-block;
+ background: #d35400;
+ color: #fff;
+ padding: 12px 28px;
+ border-radius: 40px;
+ font-weight: 600;
+ text-decoration: none;
+ font-size: 1.1rem;
+ transition: background 0.2s;
+ margin-top: 10px;
+ }
+ .tel-link:hover {
+ background: #b84600;
+ }
+ .footer {
+ background: #2c2a28;
+ color: #b0aba5;
+ text-align: center;
+ padding: 24px 20px;
+ font-size: 0.85rem;
+ }
+ .footer a {
+ color: #d35400;
+ text-decoration: none;
+ }
+
+ @media (max-width: 768px) {
+ .info-grid {
+ grid-template-columns: 1fr;
+ }
+ .section-title {
+ font-size: 1.6rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · t3b07-mg-coin-sale-1">
+  <meta property="og:description" content="t3b07-mg-coin-sale-1에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://magok-room-choice.node-link.shop/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="header-inner">
+ <a href="/" class="logo">🎤 브로<span>의 핫플</span></a>
+ <nav>
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/price">가격</a>
+ <a href="/event">이벤트</a>
+ 
+ </nav>
+ <button class="hamburger" onclick="document.querySelector('.mobile-menu').classList.toggle('active')">
+ 
+ 
+ 
+ </button>
+ </div>
+ <div class="mobile-menu">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/price">가격</a>
+ <a href="/event">이벤트</a>
+ 
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 39개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0481.html">마곡 코인노래방 할인 정보를 찾다 발견한 동대문 풋쌤 마사지</a>
+        <p class="post-item__summary">주말 저녁 평소처럼 마곡 코인노래방 할인 혜택을 찾아보다가 우연히 동대문 근처에서 피로를 풀 수 있는 공간을 알게 되었습니다. 단순히 노래를 부르며 스트레스를 해소하는 것도 좋지만 가끔은 몸의 긴장</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0482.html">마곡 코인노래방 할인보다 가치 있는 마포/합정 인디 소셜 라운지 가이드</a>
+        <p class="post-item__summary">흔히들 친구들과 모임을 가질 때 마곡 코인노래방 할인 프로모션에만 집착하는 경우가 많습니다. 물론 경제적인 선택도 중요하지만 모임의 질을 결정하는 것은 결국 어떤 장소를 선택하느냐에 달려 있습니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0483.html">마곡 코인노래방 할인 검색처럼 꼼꼼한 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호</a>
+        <p class="post-item__summary">사이트의 가시성을 높이기 위해서는 정기적인 분석과 관리가 필수적인데, 마치 마곡 코인노래방 할인 정보를 꼼꼼히 확인하는 것과 같은 정교함이 요구됩니다. 서버 상태 확인, 로봇 파일 최적화, 콘텐츠의</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0484.html">마곡 코인노래방 할인 받으려다 겪는 마포 셔츠룸 예약 시 눈탱이 피하는 법</a>
+        <p class="post-item__summary">가벼운 마음으로 퇴근길에 마곡 코인노래방 할인 정보를 찾던 중, 혹시 더 화려하고 색다른 유흥 정보를 접해본 적이 있으신가요? 단순한 노래 시설 이용을 넘어 셔츠룸과 같은 특수 업소를 고려하게 될 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0485.html">마곡 코인노래방 할인 확인하며 배우는 마포 단체 회식용 대형 룸 노래방 가격 정보</a>
+        <p class="post-item__summary">단체 회식을 준비하는 실무자라면 예산 절감을 위해 마곡 코인노래방 할인 혜택을 찾아보는 것과 같은 꼼꼼함이 필요합니다. 하지만 인원이 많아질수록 일반적인 노래방보다는 대형 룸이 구비된 장소를 선택하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0486.html">마곡 코인노래방 할인 보다 중요한 셔츠룸 예약 및 가격 판단 기준과 셔츠룸 정보</a>
+        <p class="post-item__summary">일상적인 놀이 문화로 마곡 코인노래방 할인 혜택을 찾는 경우와, 좀 더 깊이 있는 유흥 문화를 즐기려는 셔츠룸 방문은 목적 자체가 완전히 다릅니다. 전자는 저렴한 가격으로 짧게 노래를 즐기려는 목적</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0487.html">마곡 코인노래방 할인 정보를 찾는 이들을 위한 마포 홍대 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">가벼운 마음으로 마곡 코인노래방 할인 혜택을 찾아 노래를 즐기던 이들이 홍대나 합정 지역의 대형 가라오케를 방문할 때 가장 많이 실패하는 지점은 준비성 부족입니다. 단순히 시간제 요금을 지불하고 입</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0488.html">마곡 코인노래방 할인 혜택보다 중요한 마포 홍대 로컬 럭셔리 밤문화 가이드 체크</a>
+        <p class="post-item__summary">마곡 코인노래방 할인 혜택을 즐기는 것과 홍대 지역의 럭셔리한 밤문화를 탐색하는 것은 전혀 다른 영역의 준비가 필요합니다. 본인의 성향과 어울리는 장소를 찾기 위해 반드시 확인해야 할 체크리스트를 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0489.html">마곡 코인노래방 할인 정보를 넘어서 도메인 지수 탈모 방지 및 앵커 텍스트 이식 가이드</a>
+        <p class="post-item__summary">온라인에서 마곡 코인노래방 할인 정보를 찾아 헤매던 사용자가 특정 웹페이지의 가치를 평가하는 과정은 흡사 지식의 숲을 탐험하는 것과 같습니다. 어느 날 웹사이트 성장을 고민하던 운영자가 검색 엔진 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0490.html">마곡 코인노래방 할인 정보를 활용한 구글 틈새 키워드 트래픽 외환 거래 전략의 이해</a>
+        <p class="post-item__summary">많은 이들이 지역 서비스 혜택을 찾는 과정이 단순한 검색 행위에 불과하다고 오해하곤 합니다. 그러나 마곡 코인노래방 할인과 같은 지역 키워드는 검색 엔진의 알고리즘 흐름을 파악하는 데 매우 효과적인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0491.html">마곡 코인노래방 할인 혜택 확인과 구글 알고리즘 고신용 도메인 보증 카드 발급의 상관성</a>
+        <p class="post-item__summary">디지털 자산의 신뢰도를 높이기 위해서는 운영 도메인의 역사, 꾸준한 콘텐츠 업데이트, 그리고 트래픽의 질적 안정성이라는 세 가지 조건이 반드시 충족되어야 합니다. 마곡 코인노래방 할인 정보를 검색하</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0492.html">마곡 코인노래방 할인 정보만큼 중요한 마포 유흥 투명 정찰제 가격 정보 디렉토리의 필요성</a>
+        <p class="post-item__summary">여러분은 지역 내 서비스를 이용할 때 합리적인 가격이 명시되어 있는지 미리 확인하는 편인가요? 마곡 코인노래방 할인 정보를 찾는 수고로움만큼이나 소비자가 당연히 누려야 할 권리는 바로 투명한 가격 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0493.html">마곡 코인노래방 할인 정보를 활용한 합정 셔츠룸 단골들이 뽑은 핫플 매거진 탐구</a>
+        <p class="post-item__summary">일상의 여유를 찾는 이들이 마곡 코인노래방 할인 혜택을 챙기듯, 유흥 문화의 정점을 찾는 이들에게는 신뢰할 수 있는 정보원이 필수적입니다. 흔히 온라인상의 후기는 광고성 정보가 섞여 있어 옥석을 가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0494.html">마곡 코인노래방 할인 혜택보다 정교한 마포 셔츠룸 리얼 후기 소셜 마케팅 가이드 분석</a>
+        <p class="post-item__summary">마곡 코인노래방 할인 정보를 찾는 이들이 비용 효율성을 고려하듯, 고급 유흥 서비스인 셔츠룸을 이용할 때도 가격 결정 구조에 대한 이해가 수반되어야 합니다. 소비자는 서비스의 정가제와 추가 옵션 사</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260719-0495.html">마곡 코인노래방 할인 정보처럼 빠른 구글 인덱싱 속도 초고속 광회선 대역폭 최적화 기술</a>
+        <p class="post-item__summary">온라인상의 마곡 코인노래방 할인 혜택을 놓치지 않으려는 노력처럼, 웹사이트의 정보를 검색 엔진에 빠르게 노출시키려는 노력도 최적화가 필요합니다. 많은 웹마스터들이 간과하는 부분은 바로 예약과 같은 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0062.html">마곡 코인노래방 할인 이용 후 알아보는 마포 럭셔리 단체 가라오케 예약 가이드</a>
+        <p class="post-item__summary">일상적인 마곡 코인노래방 할인 혜택을 즐기다 보면, 때로는 소규모 공간을 벗어나 더 넓은 곳을 찾게 됩니다. 여러 사람이 모이는 단체 모임이라면 일반적인 코인노래방보다는 전문 시설을 고려해야 합니다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0063.html">마곡 코인노래방 할인 확인하며 챙기는 마르지 않는 1급수 백링크 주스 공급 서비스</a>
+        <p class="post-item__summary">알뜰한 마곡 코인노래방 할인 소식을 찾는 것처럼, 온라인 상에서도 정직하고 유용한 정보를 찾는 노력이 필요합니다. 특히 정보의 출처가 불분명하거나 질이 낮은 경우에는 아무리 강조해도 검색 결과에서 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0064.html">마곡 코인노래방 할인 정보를 통한 4</a>
+        <p class="post-item__summary">지역 내에서 마곡 코인노래방 할인 혜택을 찾는 과정은 정보 검색 능력과 접근성을 확인하는 좋은 연습이 됩니다. 이와 비슷하게 최근 주목받는 디지털 전환 기술을 배우고자 한다면 신뢰할 수 있는 교육 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0065.html">마곡 코인노래방 할인 혜택 확인하고 셔츠룸 사이트 정보 찾기</a>
+        <p class="post-item__summary">평일 저녁 가벼운 마음으로 퇴근길에 마곡 코인노래방 할인을 찾아 방문했다가, 정작 목적했던 곳이 아닌 다른 유흥 문화를 접하게 되는 경우가 종종 발생합니다. 익숙하지 않은 지역에서 화려한 간판만 보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0066.html">마곡 코인노래방 할인 받아 이용하는 마포 코인노래방 방음 시설 비교 가이드</a>
+        <p class="post-item__summary">흔히 코인노래방은 좁은 공간 특성상 옆방의 노래 소리가 들리는 것이 당연하다고 생각하는 경우가 많습니다. 하지만 이는 시공 단계에서 방음 처리가 제대로 이루어지지 않은 업장에 국한된 이야기일 뿐, </p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
